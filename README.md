@@ -32,4 +32,4 @@ $ ffmpeg.exe -y -f image2 -framerate 30 -i image_%04d.png video.mp4
 ```
 
 ## Gallery
-![Smoke plume image](/images/smoke_plume.png)
+<img src="/images/smoke_plume.png" alt="Smoke plume" width="250"/>
