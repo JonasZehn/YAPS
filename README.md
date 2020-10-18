@@ -1,6 +1,7 @@
 # YAPS - Yet another particle splatter
 
-This is a particle splatter intended for the rendering of smoke.
+This is a particle splatter intended for the rendering of smoke. The implementation is pretty ad-hoc and definetly could be improved a lot in its current form for general use.
+
 The input is a list of velocity grid files specifically .uni files, which can be generated using e. g. [mantaflow](http://mantaflow.com/).
 Particles are then traced through these velocity fields and rendered.
 The particles are illuminated by rendering the particles from the camera in sorted order to allow for a simple model based on transparency.
@@ -17,9 +18,11 @@ The project can be compiled using cmake, but the following libraries are require
 * CUDA
 * libpng
 
+This was last tested with cmake 3.17, Eigen 3.3.5, zlib 1.2.11, Qt 5.10, CUDA 10, libpng 1.6.34.
+
 ## Usage
 
-To generate some example data, compile mantaflow and then run the example file inside the *manta-scenes* folder using
+To generate some example data, compile [mantaflow](http://mantaflow.com/) and then run the example file inside the *manta-scenes* folder using
 ```
 $ manta plume.py mc
 ```
